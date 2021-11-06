@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" href="DSTYLES.css" type="text/css">
+<style>
+</style>
+<title>Dice Roller</title>
+</head>
+
+<body style="padding:0px; margin:0px; background-color:#AEAEAE">
+	<table style="width:100%; padding:0px; border-collapse:collapse">
+		<tr>
+			<td colspan="3">
+				<center><a href="HomePage.html"><img src="Images/DIMWITSANDDRAGONS.png" alt="Dimwits and Dragons logo" width="260px"></a></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="navbar">
+  					<a href="HomePage.html">Home</a>
+  				<div class="dropdown">
+    				<button class="dropbtn">Cheat Sheets<i class="fa fa-caret-down"></i></button>
+    					<div class="dropdown-content">
+      						<a href="Comabt.html">Combat Rules</a>
+      						<a href="Travel.html">Travel Rules</a>
+      						<a href="Races.html">Races</a>
+      						<a href="Classas.html">Classes</a>
+    					</div>
+  				</div> 
+  					<a href="Resources.html">Character Sheets and Battle Maps</a>
+  					<a href="DICE.html">Dice Roller</a>
+  					<a href="FEED.html">Feedback</a>	
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#1E1E1E; width:13%" rowspan="6">
+			</td>
+			<td>
+				<p style="text-align:center; color:#1B1B1B; font-size: large">
+						This dice roller has all the dice that you may not already own that you need for a game of dungeons and dragons.
+					<br>
+						We have a 20-sided dice, 12-sided dice, 10-sided dice, 8-sided dice and a 4-sided dice. 
+					<br>
+						So start rolling!
+				</p>
+			</td>
+			<td style="background-color:#1E1E1E; width:13%" rowspan="6">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img id="Dice" src="DICE/D20/D20.png"/>
+				<button onclick="randomone()">Roll D20</button>
+				<script>
+						function randomone(){
+						var DiceRolled = Math.floor(Math.random()*20)+1
+						
+						if(DiceRolled == 1)
+					{
+						document.getElementById ('Dice').src = "DICE/D20/D20-1.png"
+					}
+						if(DiceRolled == 2)
+					{
+						document.getElementById ('Dice').src = "DICE/D20/D20-2.png"
+					}
+						if(DiceRolled == 3)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-3.png"
+					}
+						if(DiceRolled == 4)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-4.png"
+					}
+						if(DiceRolled == 5)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-5.png"
+					}
+						if(DiceRolled == 6)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-6.png"
+					}
+						if(DiceRolled == 7)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-7.png"
+					}
+						if(DiceRolled == 8)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-8.png"
+					}
+						if(DiceRolled == 9)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-9.png"
+					}
+						if(DiceRolled == 10)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-10.png"
+					}
+						if(DiceRolled == 11)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-11.png"
+					}
+						if(DiceRolled == 12)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-12.png"
+					}
+						if(DiceRolled == 13)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-13.png"
+					}
+						if(DiceRolled == 14)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-14.png"
+					}
+						if(DiceRolled == 15)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-15.png"
+					}
+						if(DiceRolled == 16)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-16.png"
+					}
+						if(DiceRolled == 17)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-17.png"
+					}	
+						if(DiceRolled == 18)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-18.png"
+					}
+						if(DiceRolled == 19)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-19.png"
+					}
+						if(DiceRolled == 20)
+					{
+						document.getElementById('Dice').src = "DICE/D20/D20-20.png"
+					}
+					}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img id="Dicetwo" src="DICE/D12/D12.png"/>
+				<button onclick="randomtwo()">Roll D12</button>
+				<script>
+						function randomtwo(){
+						var DiceRolled = Math.floor(Math.random()*12)+1
+						
+						if(DiceRolled == 1)
+					{
+						document.getElementById('Dicetwo').src = "DICE/D12/D12-1.png"
+					}
+						if(DiceRolled == 2)
+					{
+						document.getElementById('Dicetwo').src = "DICE/D12/D12-2.png"
+					}
+						if(DiceRolled == 3)
+					{
+						document.getElementById('Dicetwo').src = "DICE/D12/D12-3.png"
+					}
+						if(DiceRolled == 4)
+					{
+						document.getElementById('Dicetwo').src = "DICE/D12/D12-4.png"
+					}
+						if(DiceRolled == 5)
+					{
+						document.getElementById('Dicetwo').src = "DICE/D12/D12-5.png"
+					}
+						if(DiceRolled == 6)
+					{
+						document.getElementById('Dicetwo').src = "DICE/D12/D12-6.png"
+					}
+						if(DiceRolled == 7)
+					{
+						document.getElementById('Dicetwo').src = "DICE/D12/D12-7.png"
+					}
+						if(DiceRolled == 8)
+					{
+						document.getElementById('Dicetwo').src = "DICE/D12/D12-8.png"
+					}
+						if(DiceRolled == 9)
+					{
+						document.getElementById('Dicetwo').src = "DICE/D12/D12-9.png"
+					}
+						if(DiceRolled == 10)
+					{
+						document.getElementById('Dicetwo').src = "DICE/D12/D12-10.png"
+					}
+						if(DiceRolled == 11)
+					{
+						document.getElementById('Dicetwo').src = "DICE/D12/D12-11.png"
+					}
+						if(DiceRolled == 12)
+					{
+						document.getElementById('Dicetwo').src ="DICE/D12/D12-12.png"
+					}
+					}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img id="Dicethree" src="DICE/D10/D10.png"/>
+				<button onclick="randomthree()">Roll D10</button>
+				<script>
+						function randomthree(){
+						var  DiceRolled = Math.floor(Math.random()*10)+1
+						
+						if (DiceRolled == 1)
+					{
+						document.getElementById('Dicethree').src = "DICE/D10/D10-1.png"
+					}
+						if (DiceRolled == 2)
+					{
+						document.getElementById('Dicethree').src = "DICE/D10/D10-2.png"
+					}
+						if (DiceRolled == 3)
+					{
+						document.getElementById('Dicethree').src = "DICE/D10/D10-3.png"
+					}
+						if (DiceRolled == 4)
+					{
+						document.getElementById('Dicethree').src = "DICE/D10/D10-4.png"
+					}
+						if (DiceRolled == 5)
+					{
+						document.getElementById('Dicethree').src = "DICE/D10/D10-5.png"
+					}
+						if (DiceRolled == 6)
+					{
+						document.getElementById('Dicethree').src = "DICE/D10/D10-6.png"
+					}
+						if (DiceRolled == 7)
+					{
+						document.getElementById('Dicethree').src = "DICE/D10/D10-7.png"
+					}
+						if (DiceRolled == 8)
+					{
+						document.getElementById('Dicethree').src = "DICE/D10/D10-8.png"
+					}
+						if (DiceRolled == 9)
+					{
+						document.getElementById('Dicethree').src = "DICE/D10/D10-9.png"
+					}
+						if (DiceRolled == 10)
+					{
+						document.getElementById('Dicethree').src = "DICE/D10/D10-10.png"
+					}
+					}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img id="Dicefour" src="DICE/D8/D8.png"/>
+				<button onclick="randomfour()">Roll D8</button>
+				<script>
+						function randomfour(){
+						var DiceRolled = Math.floor(Math.random()*8)+1
+						
+						if (DiceRolled == 1)
+					{
+						document.getElementById('Dicefour').src = "DICE/D8/D8-1.png"
+					}
+						if (DiceRolled == 2)
+					{
+						document.getElementById('Dicefour').src = "DICE/D8/D8-2.png"
+					}
+						if (DiceRolled == 3)
+					{
+						document.getElementById('Dicefour').src = "DICE/D8/D8-3.png"
+					}
+						if (DiceRolled == 4)
+					{
+						document.getElementById('Dicefour').src = "DICE/D8/D8-4.png"
+					}
+						if (DiceRolled == 5)
+					{
+						document.getElementById('Dicefour').src = "DICE/D8/D8-5.png"
+					}
+						if (DiceRolled == 6)
+					{
+						document.getElementById('Dicefour').src = "DICE/D8/D8-6.png"
+					}
+						if (DiceRolled == 7)
+					{
+						document.getElementById('Dicefour').src = "DICE/D8/D8-7.png"
+					}
+						if (DiceRolled == 8)
+					{
+						document.getElementById('Dicefour').src = "DICE/D8/D8-8.png"
+					}
+					}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img id="Dicefive" src="DICE/D4/D4.png"/>
+				<button onclick="randomfive()">Roll D4</button>
+				<script>
+						function randomfive(){
+						var  DiceRolled = Math.floor(Math.random()*4)+1
+						
+						if (DiceRolled == 1)
+					{
+						document.getElementById('Dicefive').src = "DICE/D4/D4-1.png"
+					}
+						if (DiceRolled == 2)
+					{
+						document.getElementById('Dicefive').src = "DICE/D4/D4-2.png"
+					}
+						if (DiceRolled == 3)
+					{
+						document.getElementById('Dicefive').src = "DICE/D4/D4-3.png"
+					}
+						if (DiceRolled == 4)
+					{
+						document.getElementById('Dicefive').src = "DICE/D4/D4-4.png"
+					}
+					}
+				</script>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

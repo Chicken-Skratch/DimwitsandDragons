@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" href="DSTYLES.css" type="text/css">
+<style>
+</style>
+<title>Home</title>
+</head>
+
+<body style="padding:0px; margin:0px; background-color:#AEAEAE">
+	<table style="width:100%; padding:0px; border-collapse:collapse">
+		<tr>
+			<td colspan="3">
+				<center><a href="HomePage.html"><img src="Images/DIMWITSANDDRAGONS.png" alt="Dimwits and Dragons logo" width="260px"></a></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="navbar">
+  					<a href="HomePage.html">Home</a>
+  				<div class="dropdown">
+    				<button class="dropbtn">Cheat Sheets<i class="fa fa-caret-down"></i></button>
+    					<div class="dropdown-content">
+      						<a href="Comabt.html">Combat Rules</a>
+      						<a href="Travel.html">Travel Rules</a>
+      						<a href="Races.html">Races</a>
+      						<a href="Classas.html">Classes</a>
+    					</div>
+  				</div> 
+  					<a href="Resources.html">Character Sheets and Battle Maps</a>
+  					<a href="DICE.html">Dice Roller</a>
+  					<a href="FEED.html">Feedback</a>	
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#1E1E1E; width:13%;" rowspan="2">
+			</td>
+			<td>
+				<p style="text-align:center; color:#1B1B1B; font-size:large">
+					Do you play Dungeons and Dragons or are hoping the play it?<br> Do you often find it difficult to find certain rules in the player's handbook?<br> Or maybe you just don't have any dice to roll. 
+				<br>
+				<br>
+					Well this website serves as an easy way to find the rules you're looking for and roll your dice. 
+				<br>
+				<br>
+					We have pages with easy to understand explanations to rules such as what you should add to your attack roll<br> or how to calculate your passive perception.
+				<br>
+				<br>
+					We also have a <link><a href="DICE.html">dice roller</a> that you can use if you don't own dice.
+				<br>
+				<br>
+					This website has all you need to play your first game of Dungeons and Dragons!
+				<br>
+				<br>
+					Just check out our <link><a href="Resources.html">Character Sheets and Battle Maps!</a>
+				<br>
+					It has character sheets for you to print out and fill in.<br>As well as some basic battle maps that you can print off and play on!
+				<br> 
+				<br>
+					Why not try playing Dungeons and Dragons for the first time with this website as your helpful companion!
+				<br>
+				</p>
+			</td>
+			<td style="background-color:#1E1E1E; width:13%" rowspan="2">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="slideshow-container">
+
+					<div class="mySlides fade">
+  					<div class="numbertext">1 / 3</div>
+  					<img src="Images/PEEPSPLAYDND.jpg" alt="People play Dungeons and Dragons" style="width:100%">
+  					<div class="text">Doesn't this look fun?</div>
+				</div>
+				<div class="mySlides fade">
+  					<div class="numbertext">2 / 3</div>
+  					<img src="Images/LOTSOFUN.png" alt="People cheering while playing Dungeons and Dragons" style="width:100%">
+  					<div class="text">Look how much fun they're having!</div>
+				</div>
+				<div class="mySlides fade">
+  					<div class="numbertext">3 / 3</div>
+  					<img src="Images/TERRYCRUZDND.jpg" alt="Terry Cruz playing a game of Dungeons and Dragons with Matthew Mercer and Ashley Burch" style="width:100%">
+  					<div class="text">Even Terry Cruz plays Dungeons and Dragons!</div>
+				</div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+				<div style="text-align:center">
+  					<span class="dot" onclick="currentSlide(1)"></span> 
+  					<span class="dot" onclick="currentSlide(2)"></span> 
+  					<span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+				<script>
+						var slideIndex = 1;
+						showSlides(slideIndex);
+
+						function plusSlides(n) {
+ 		 				showSlides(slideIndex += n);
+					}
+
+						function currentSlide(n) {
+  						showSlides(slideIndex = n);
+					}
+
+						function showSlides(n) {
+  							var i;
+  							var slides = document.getElementsByClassName("mySlides");
+  							var dots = document.getElementsByClassName("dot");
+  							if (n > slides.length) {slideIndex = 1}    
+  							if (n < 1) {slideIndex = slides.length}
+  							for (i = 0; i < slides.length; i++) {
+      							slides[i].style.display = "none";  
+  					}
+  							for (i = 0; i < dots.length; i++) {
+      							dots[i].className = dots[i].className.replace(" active", "");
+  					}
+  								slides[slideIndex-1].style.display = "block";  
+  								dots[slideIndex-1].className += " active";
+					}
+				</script>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
+
+
+
+
